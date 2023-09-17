@@ -1,7 +1,7 @@
 package com.twodollar.modules.bak.counsel.infra.counselRecommend;
 
 import com.twodollar.modules.bak.counsel.domain.CounselRecommend;
-import com.twodollar.modules.counsel.domain.QCounselRecommend;
+import com.twodollar.modules.bak.counsel.domain.QCounselRecommend;
 import com.twodollar.modules.bak.counsel.domain.enums.RecommendGubn;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.jpa.JPQLQuery;

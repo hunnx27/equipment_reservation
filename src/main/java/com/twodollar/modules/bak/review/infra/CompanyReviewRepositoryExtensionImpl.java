@@ -11,7 +11,7 @@ import com.querydsl.jpa.JPQLQuery;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport;
-import com.twodollar.modules.review.domain.QCompanyReview;
+import com.twodollar.modules.bak.review.domain.QCompanyReview;
 
 import java.util.List;
 import java.util.Objects;

@@ -5,7 +5,7 @@ import com.twodollar.modules.account.domain.Account;
 import com.twodollar.modules.bak.counsel.domain.Counsel;
 import com.twodollar.modules.bak.counsel.domain.enums.QnaGubn;
 import com.twodollar.modules.bak.counsel.domain.enums.QnaItem;
-import com.twodollar.modules.counsel.domain.QCounsel;
+import com.twodollar.modules.bak.counsel.domain.QCounsel;
 import com.twodollar.modules.bak.counsel.domain.enums.CounselState;
 import com.twodollar.modules.bak.counsel.web.dto.request.counsel.CounselSearchRequest;
 import com.querydsl.core.BooleanBuilder;

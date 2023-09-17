@@ -2,7 +2,7 @@ package com.twodollar.modules.bak.counsel.infra.counselComment;
 
 import com.twodollar.common.web.dto.response.enums.YN;
 import com.twodollar.modules.bak.counsel.domain.CounselComment;
-import com.twodollar.modules.counsel.domain.QCounselComment;
+import com.twodollar.modules.bak.counsel.domain.QCounselComment;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.QueryResults;
 import com.querydsl.jpa.JPQLQuery;

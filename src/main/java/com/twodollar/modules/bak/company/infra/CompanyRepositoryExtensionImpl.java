@@ -3,7 +3,7 @@ package com.twodollar.modules.bak.company.infra;
 import com.twodollar.common.web.dto.response.enums.YN;
 import com.twodollar.modules.bak.company.domain.Company;
 import com.twodollar.modules.common.address.infra.AddressRepository;
-import com.twodollar.modules.company.domain.QCompany;
+import com.twodollar.modules.bak.company.domain.QCompany;
 import com.twodollar.modules.bak.company.web.dto.reponse.CompanyDetailResponse;
 import com.twodollar.modules.bak.company.web.dto.reponse.CompanySearchResponse;
 import com.twodollar.modules.bak.company.web.dto.request.CompanySearchRequest;
@@ -20,11 +20,10 @@ import org.springframework.data.jpa.repository.support.QuerydslRepositorySupport
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static com.twodollar.modules.company.domain.QCompany.company;
-
 public class CompanyRepositoryExtensionImpl extends QuerydslRepositorySupport implements
         CompanyRepositoryExtension {
 
+    QCompany company =QCompany.company;
     private final JPAQueryFactory jpaQueryFactory;
     private AddressRepository addressRepository;
 

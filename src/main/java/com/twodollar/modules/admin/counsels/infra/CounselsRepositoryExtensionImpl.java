@@ -4,7 +4,8 @@ import com.twodollar.common.web.dto.response.enums.Gubn;
 import com.twodollar.common.web.dto.response.enums.InterestCompany;
 import com.twodollar.modules.account.domain.Account;
 import com.twodollar.modules.admin.counsels.web.dto.*;
-import com.twodollar.modules.counsel.domain.QCounsel;
+import com.twodollar.modules.bak.counsel.domain.QCounsel;
+import com.twodollar.modules.bak.counsel.domain.QCounsel;
 import com.twodollar.modules.bak.counsel.domain.enums.CounselState;
 import com.twodollar.modules.bak.counsel.domain.enums.QnaGubn;
 import com.twodollar.modules.bak.counsel.domain.enums.QnaItem;
@@ -26,8 +27,6 @@ import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
-
-import static java.lang.String.valueOf;
 
 public class CounselsRepositoryExtensionImpl extends QuerydslRepositorySupport implements
         CounselsRepositoryExtension {

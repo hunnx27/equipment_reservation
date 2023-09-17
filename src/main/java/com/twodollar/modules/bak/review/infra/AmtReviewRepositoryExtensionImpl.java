@@ -2,7 +2,7 @@ package com.twodollar.modules.bak.review.infra;
 
 import com.twodollar.common.web.dto.response.enums.State;
 import com.twodollar.modules.bak.review.domain.YearAmtReview;
-import com.twodollar.modules.review.domain.QYearAmtReview;
+import com.twodollar.modules.bak.review.domain.QYearAmtReview;
 import com.twodollar.modules.bak.company.web.dto.reponse.YearAmtListResponseDto;
 import com.twodollar.modules.bak.review.web.dto.FindEstaRequestDto;
 import com.querydsl.core.BooleanBuilder;

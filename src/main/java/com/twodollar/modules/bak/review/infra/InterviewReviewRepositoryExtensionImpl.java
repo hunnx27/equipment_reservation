@@ -4,7 +4,7 @@ import com.twodollar.common.web.dto.response.enums.State;
 import com.twodollar.modules.bak.review.domain.InterviewReview;
 import com.twodollar.modules.bak.review.web.dto.FindEstaRequestDto;
 import com.twodollar.modules.bak.company.domain.Company;
-import com.twodollar.modules.review.domain.QInterviewReview;
+import com.twodollar.modules.bak.review.domain.QInterviewReview;
 import com.twodollar.modules.bak.company.web.dto.reponse.InterviewListResponseDto;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.jpa.impl.JPAQueryFactory;
