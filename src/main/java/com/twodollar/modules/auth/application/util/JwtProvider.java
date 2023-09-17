@@ -20,7 +20,7 @@ import java.util.Date;
 @RequiredArgsConstructor
 public class JwtProvider {
 
-    @Value("${biseo.jwt.secret}")
+    @Value("${auth.jwt.secret}")
     private String secretKey;
 
     private final UserDetailServiceImpl userDetailService;

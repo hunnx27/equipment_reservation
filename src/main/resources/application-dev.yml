@@ -4,16 +4,16 @@ server:
 spring:
   datasource:
     # H2 디비설정
-    url: jdbc:h2:mem:test
-    username: sa
-    password:
-    driver-class-name: org.h2.Driver
-    # reservation mysql8.0.33
-#    url: jdbc:mysql://localhost:3309/reservation?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&zeroDateTimeBehavior=CONVERT_TO_NULL
-#    username: reservation
-#    password: password
-#    #driver-class-name: com.mysql.cj.jdbc.Driver
-#    driver-class-name: software.aws.rds.jdbc.mysql.Driver
+#    url: jdbc:h2:mem:test
+#    username: sa
+#    password:
+#    driver-class-name: org.h2.Driver
+    # reservation mysql 10.1.x
+    url: jdbc:mysql://sehankdp.cafe24.com:3306/sehankdp?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&zeroDateTimeBehavior=CONVERT_TO_NULL
+    username: sehankdp
+    password: tpgkseo2!
+    #driver-class-name: com.mysql.cj.jdbc.Driver
+    driver-class-name: software.aws.rds.jdbc.mysql.Driver
     hikari:
       pool-name: jpa-hikari-pool
       maximum-pool-size: 30
@@ -36,7 +36,7 @@ spring:
         format_sql: true
         #dialect: org.hibernate.dialect.MySQL5InnoDBDialect
         #dialect: org.hibernate.dialect.H2Dialect
-        dialect: com.biseo.config.CustomMysqlDialect
+        dialect: com.twodollar.config.CustomMysqlDialect
 
 
     defer-datasource-initialization: true
@@ -71,7 +71,7 @@ logging:
         http:
           client: trace
 
-biseo:
+auth:
   jwt:
     secret: UFMgZFP4ciZDx/FfK3U16X6Mm3M=
 
