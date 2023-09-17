@@ -31,9 +31,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     private final JwtAuthenticationEntryPointImpl authenticationEntryPoint;
     private final AccessDeniedHandlerImpl accessDeniedHandler;
     private final JwtProvider jwtProvider;
-    private final CustomOAuth2UserService customOAuth2UserService;
-    private final OAuth2AuthenticationSuccessHandler oAuth2AuthenticationSuccessHandler;
-    private final OAuth2AuthenticationFailureHandler oAuth2AuthenticationFailureHandler;
+
+//    private final CustomOAuth2UserService customOAuth2UserService; /* OAuth2 인증 제거 */
+//    private final OAuth2AuthenticationSuccessHandler oAuth2AuthenticationSuccessHandler; /* OAuth2 인증 제거 */
+//    private final OAuth2AuthenticationFailureHandler oAuth2AuthenticationFailureHandler; /* OAuth2 인증 제거 */
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -67,18 +68,20 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.logout()
             .logoutSuccessUrl("/");
 
-        http.oauth2Login()
-            .defaultSuccessUrl("/login-success")
-            .successHandler(oAuth2AuthenticationSuccessHandler)
-            .failureHandler(oAuth2AuthenticationFailureHandler)
-            .authorizationEndpoint()
-            .baseUri("/oauth2/authorization")
-            .authorizationRequestRepository(cookieAuthorizationRequestRepository())
-            .and().redirectionEndpoint()
-                .baseUri("/login/oauth2/code/*") // OAuth 응답시 처리 설정
-            .and()
-            .userInfoEndpoint()
-            .userService(customOAuth2UserService);
+        /* OAuth2 인증 제거 */
+        // OAuth2 설정
+//        http.oauth2Login()
+//            .defaultSuccessUrl("/login-success")
+//            .successHandler(oAuth2AuthenticationSuccessHandler)
+//            .failureHandler(oAuth2AuthenticationFailureHandler)
+//            .authorizationEndpoint()
+//            .baseUri("/oauth2/authorization")
+//            .authorizationRequestRepository(cookieAuthorizationRequestRepository())
+//            .and().redirectionEndpoint()
+//                .baseUri("/login/oauth2/code/*") // OAuth 응답시 처리 설정
+//            .and()
+//            .userInfoEndpoint()
+//            .userService(customOAuth2UserService);
 
         http.addFilterBefore(new JwtAuthenticationRequestFilter(jwtProvider),
             UsernamePasswordAuthenticationFilter.class);
@@ -88,7 +91,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailService).passwordEncoder(passwordEncoder);
-//        auth.authenticationProvider(daoAuthenticationProvider());
+        //auth.authenticationProvider(daoAuthenticationProvider());
     }
 
     @Bean
@@ -97,9 +100,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return super.authenticationManagerBean();
     }
 
-    @Bean
-    public HttpCookieOAuth2AuthorizationRequestRepository cookieAuthorizationRequestRepository() {
-        return new HttpCookieOAuth2AuthorizationRequestRepository();
-    }
+    /* OAuth2 인증 제거 */
+//    @Bean
+//    public HttpCookieOAuth2AuthorizationRequestRepository cookieAuthorizationRequestRepository() {
+//        return new HttpCookieOAuth2AuthorizationRequestRepository();
+//    }
 
 }
