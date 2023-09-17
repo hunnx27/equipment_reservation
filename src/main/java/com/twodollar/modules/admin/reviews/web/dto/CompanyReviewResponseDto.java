@@ -2,8 +2,8 @@ package com.twodollar.modules.admin.reviews.web.dto;
 
 import com.twodollar.common.web.dto.response.enums.YN;
 import com.twodollar.modules.common.code.application.TestData;
-import com.twodollar.modules.review.domain.CompanyReview;
-import com.twodollar.modules.review.domain.embed.Images;
+import com.twodollar.modules.bak.review.domain.CompanyReview;
+import com.twodollar.modules.bak.review.domain.embed.Images;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

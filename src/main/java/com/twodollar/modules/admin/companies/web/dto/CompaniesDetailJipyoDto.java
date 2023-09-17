@@ -1,7 +1,7 @@
 package com.twodollar.modules.admin.companies.web.dto;
 
-import com.twodollar.modules.company.application.util.dto.EvaluationScore;
-import com.twodollar.modules.company.application.util.dto.UserScore;
+import com.twodollar.modules.bak.company.application.util.dto.EvaluationScore;
+import com.twodollar.modules.bak.company.application.util.dto.UserScore;
 import lombok.Getter;
 import lombok.Setter;
 

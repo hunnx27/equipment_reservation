@@ -14,6 +14,7 @@ import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -59,6 +60,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                         "/swagger-ui/**", "/webjars/**").not().fullyAuthenticated()
                 //이부분은 수정해야함 외부노출 xxxx 관리자용 토큰으로 따로 승인받기?
             .antMatchers("/auth/**").permitAll()
+            .antMatchers("/assets/**", "/html/**", "/index.html","/favicon.ico").permitAll()
             .anyRequest().authenticated();
 
         http.exceptionHandling()
@@ -98,6 +100,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public AuthenticationManager authenticationManagerBean() throws Exception {
         return super.authenticationManagerBean();
+    }
+
+    @Override
+    public void configure(WebSecurity web) throws Exception{
+        web.ignoring().antMatchers("/assets/**", "/html/**", "/index.html");
     }
 
     /* OAuth2 인증 제거 */

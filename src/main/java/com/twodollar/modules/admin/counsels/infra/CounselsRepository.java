@@ -1,6 +1,6 @@
 package com.twodollar.modules.admin.counsels.infra;
 
-import com.twodollar.modules.counsel.domain.Counsel;
+import com.twodollar.modules.bak.counsel.domain.Counsel;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

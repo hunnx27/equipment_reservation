@@ -1,6 +1,6 @@
 package com.twodollar.modules.admin.reviews.web.dto;
 
-import com.twodollar.modules.review.domain.InterviewReviewItem;
+import com.twodollar.modules.bak.review.domain.InterviewReviewItem;
 import lombok.Getter;
 import lombok.Setter;
 

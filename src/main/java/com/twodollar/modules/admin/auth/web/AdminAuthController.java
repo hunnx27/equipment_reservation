@@ -6,7 +6,7 @@ import com.twodollar.common.web.BaseApiController;
 import com.twodollar.modules.admin.auth.application.AdminAuthService;
 import com.twodollar.modules.admin.auth.web.dto.AdminCreateRequestDto;
 import com.twodollar.modules.admin.auth.web.dto.AdminLonginRequestDto;
-import com.twodollar.modules.review.web.dto.ReviewResponseDto;
+import com.twodollar.modules.bak.review.web.dto.ReviewResponseDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

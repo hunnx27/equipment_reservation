@@ -2,8 +2,8 @@ package com.twodollar.modules.admin.counsels.web.dto;
 
 import com.twodollar.common.web.dto.response.enums.Gubn;
 import com.twodollar.common.web.dto.response.enums.YN;
-import com.twodollar.modules.counsel.domain.enums.CounselState;
-import com.twodollar.modules.counsel.domain.enums.QnaItem;
+import com.twodollar.modules.bak.counsel.domain.enums.CounselState;
+import com.twodollar.modules.bak.counsel.domain.enums.QnaItem;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

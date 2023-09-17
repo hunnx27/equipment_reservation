@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.twodollar.common.web.dto.response.enums.ProcessT;
 import com.twodollar.modules.account.domain.Account;
 import com.twodollar.modules.admin.companies.domain.enums.FixOption;
-import com.twodollar.modules.company.domain.Company;
+import com.twodollar.modules.bak.company.domain.Company;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

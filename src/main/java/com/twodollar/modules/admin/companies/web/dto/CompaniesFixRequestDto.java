@@ -1,7 +1,7 @@
 package com.twodollar.modules.admin.companies.web.dto;
 
 import com.twodollar.common.web.dto.response.enums.InterestCompany;
-import com.twodollar.modules.company.domain.enums.EstablishmentType;
+import com.twodollar.modules.bak.company.domain.enums.EstablishmentType;
 import lombok.Getter;
 
 @Getter

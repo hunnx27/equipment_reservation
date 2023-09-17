@@ -2,7 +2,7 @@ package com.twodollar.modules.admin.reviews.web.dto;
 
 import com.twodollar.common.web.dto.response.enums.InterestCompany;
 import com.twodollar.common.web.dto.response.enums.State;
-import com.twodollar.modules.company.domain.enums.EstablishmentType;
+import com.twodollar.modules.bak.company.domain.enums.EstablishmentType;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -10,7 +10,7 @@ import com.twodollar.modules.admin.event.web.dto.EventInitUserCRequestDto;
 import com.twodollar.modules.admin.event.web.dto.EventItemListResponseDto;
 import com.twodollar.modules.admin.event.web.dto.EventSearchRequestDto;
 import com.twodollar.modules.auth.web.dto.UserPrincipal;
-import com.twodollar.modules.review.web.dto.AmtRequestDto;
+import com.twodollar.modules.bak.review.web.dto.AmtRequestDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

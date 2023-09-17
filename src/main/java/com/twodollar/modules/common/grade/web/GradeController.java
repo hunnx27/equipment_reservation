@@ -5,7 +5,7 @@ import com.twodollar.modules.auth.web.dto.UserPrincipal;
 import com.twodollar.modules.common.grade.application.GradeService;
 import com.twodollar.modules.common.grade.web.dto.GradeCreateRequestDto;
 import com.twodollar.modules.common.grade.web.dto.GradeListResponseDto;
-import com.twodollar.modules.review.web.dto.AmtRequestDto;
+import com.twodollar.modules.bak.review.web.dto.AmtRequestDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

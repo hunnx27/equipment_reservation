@@ -3,15 +3,11 @@ package com.twodollar.modules.admin.counsels.infra;
 import com.twodollar.common.web.dto.response.enums.Gubn;
 import com.twodollar.common.web.dto.response.enums.InterestCompany;
 import com.twodollar.modules.account.domain.Account;
-import com.twodollar.modules.account.domain.QAccount;
 import com.twodollar.modules.admin.counsels.web.dto.*;
 import com.twodollar.modules.counsel.domain.QCounsel;
-import com.twodollar.modules.counsel.domain.enums.CounselState;
-import com.twodollar.modules.counsel.domain.enums.QnaGubn;
-import com.twodollar.modules.counsel.domain.enums.QnaItem;
-import com.twodollar.modules.review.domain.QCompanyReview;
-import com.twodollar.modules.review.domain.QInterviewReview;
-import com.twodollar.modules.review.domain.QYearAmtReview;
+import com.twodollar.modules.bak.counsel.domain.enums.CounselState;
+import com.twodollar.modules.bak.counsel.domain.enums.QnaGubn;
+import com.twodollar.modules.bak.counsel.domain.enums.QnaItem;
 import com.querydsl.core.BooleanBuilder;
 import com.querydsl.core.QueryResults;
 import com.querydsl.core.types.ExpressionUtils;
@@ -31,7 +27,6 @@ import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
-import static com.twodollar.modules.company.domain.QCompany.company;
 import static java.lang.String.valueOf;
 
 public class CounselsRepositoryExtensionImpl extends QuerydslRepositorySupport implements

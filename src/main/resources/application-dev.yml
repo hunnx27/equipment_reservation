@@ -80,3 +80,9 @@ file:
     root: C:\data
     data: Data
 
+  spring:
+    thymeleaf:
+      prefix: classpath:/templates/
+      suffix: .html
+      mode: HTML
+      cache: false # default true, 개발 시에 false, 개발 바로 반영 위함

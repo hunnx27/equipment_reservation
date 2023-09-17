@@ -15,7 +15,7 @@ import com.twodollar.modules.auth.application.util.MysqlAESUtil;
 import com.twodollar.modules.auth.application.util.MysqlSHA2Util;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.twodollar.modules.common.grade.domain.Grade;
-import com.twodollar.modules.company.domain.Company;
+import com.twodollar.modules.bak.company.domain.Company;
 import com.sun.istack.NotNull;
 import lombok.Builder;
 import lombok.Getter;

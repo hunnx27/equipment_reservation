@@ -8,7 +8,7 @@ import com.twodollar.modules.admin.notice.application.NoticeService;
 import com.twodollar.modules.admin.notice.web.dto.NoticeRequestDto;
 import com.twodollar.modules.admin.notice.web.dto.NoticeSearchRequestDto;
 import com.twodollar.modules.auth.web.dto.UserPrincipal;
-import com.twodollar.modules.review.web.dto.AmtRequestDto;
+import com.twodollar.modules.bak.review.web.dto.AmtRequestDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

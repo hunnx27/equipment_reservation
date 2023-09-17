@@ -9,7 +9,7 @@ import com.twodollar.modules.admin.reviews.application.ReviewMService;
 import com.twodollar.modules.admin.reviews.web.dto.ReviewMRequestDto;
 import com.twodollar.modules.admin.reviews.web.dto.ReviewStateUpdateRequestDto;
 import com.twodollar.modules.auth.web.dto.UserPrincipal;
-import com.twodollar.modules.review.web.dto.AmtRequestDto;
+import com.twodollar.modules.bak.review.web.dto.AmtRequestDto;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;

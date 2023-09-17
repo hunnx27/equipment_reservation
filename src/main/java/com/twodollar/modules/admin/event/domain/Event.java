@@ -8,7 +8,7 @@ import com.twodollar.modules.admin.event.domain.enums.PopupLocation;
 import com.twodollar.modules.admin.event.domain.enums.PopupLocationConverter;
 import com.twodollar.modules.admin.event.web.dto.EventCreateRequestDto;
 import com.twodollar.modules.admin.notice.domain.enums.DeviceGubn;
-import com.twodollar.modules.counsel.domain.embed.Images2;
+import com.twodollar.modules.bak.counsel.domain.embed.Images2;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;

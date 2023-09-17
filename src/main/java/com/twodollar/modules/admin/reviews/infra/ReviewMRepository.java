@@ -1,6 +1,6 @@
 package com.twodollar.modules.admin.reviews.infra;
 
-import com.twodollar.modules.company.domain.Company;
+import com.twodollar.modules.bak.company.domain.Company;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ReviewMRepository extends JpaRepository<Company, Long>, ReviewMRepositoryExtension {

@@ -1,7 +1,7 @@
 package com.twodollar.modules.admin.counsels.web.dto;
 
-import com.twodollar.modules.counsel.domain.embed.Images;
-import com.twodollar.modules.counsel.domain.enums.CounselState;
+import com.twodollar.modules.bak.counsel.domain.embed.Images;
+import com.twodollar.modules.bak.counsel.domain.enums.CounselState;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
